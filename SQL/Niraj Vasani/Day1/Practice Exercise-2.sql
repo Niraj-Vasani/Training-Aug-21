@@ -1,0 +1,12 @@
+CREATE TABLE JobHistory
+(
+	EmployeeId INT PRIMARY KEY IDENTITY(1,1),
+	StartDate VARCHAR(12) NOT NULL,
+	EndDate VARCHAR(12) NOT NULL CHECK (EndDate LIKE '__/__/____'),
+	JobId INT NOT NULL,
+	DepartmentId INT NOT NULL
+);
+
+INSERT INTO JobHistory VALUES ('2021/22/02','22/02/2022', 4, 4);
+
+SELECT * FROM JobHistory;
