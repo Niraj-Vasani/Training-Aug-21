@@ -73,11 +73,11 @@ SELECT * FROM Employees WHERE FirstName = 'Steven';
 
 --5. Get employee details from Employees table whose Employee Name are “Neena” and “Lex”
 
-SELECT * FROM Employees WHERE FirstName = 'Neena' OR FirstName = 'Lex';
+SELECT * FROM Employees WHERE FirstName IN ('Neena', 'Lex');
 
 --6. Get employee details from Employees table whose Employee name are not “Neena” and “Neena”
 
-SELECT * FROM Employees WHERE FirstName != 'Neena' AND FirstName != 'Nandita';
+SELECT * FROM Employees WHERE FirstName NOT IN ('Neena', 'Nandita');
 
 --7. Get employee details from Employees table whose Salary between 5000 and 8000
 
